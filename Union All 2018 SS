@@ -1,0 +1,69 @@
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018Q1SS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+Union ALL
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018AprilSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+Union all
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018MaySS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+Union All
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018JuneSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+
+Union all
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018JulySS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+Union All
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018AugSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+Union all
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018SepSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+Union all
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018OctSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+union all
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018NovSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"
+
+
+union all
+
+select "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory", "Operator Center",sum("Converted Price")
+from T2018DecSS
+where ("Operator Center" not like "%United States%")
+group by "Adjusted Year", "Adjusted Quarter", "Adjusted Month", "Order Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition","Major Language","Category","Major Category","Order Status",  "Bill to Country", "Bill to Territory","Operator Center"

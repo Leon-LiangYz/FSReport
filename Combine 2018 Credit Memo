@@ -1,0 +1,12 @@
+select tp1."Credit Memo Number", tp1."Product SKU",
+       tp1."Product Description", tp1."Credit Memo Date",
+       tp1.Currency_Code, tp1.Shortcut_Dimension_2_Code ,
+       tp1.Applies_to_Doc_No, -(tp1."Credit Memo Amount"),
+       TPSCMS.Cancelled, TPSCMS.Corrective
+from (select TPSCML.Document_No as "Credit Memo Number", TPSCML.No as "Product SKU", 
+               TPSCML.Description as "Product Description", TPSCM.Posting_Date as "Credit Memo Date",
+               TPSCM.Currency_Code, TPSCM.Shortcut_Dimension_2_Code ,
+               TPSCM.Applies_to_Doc_No, sum(TPSCML.Line_Amount) as "Credit Memo Amount"             
+      from TPSCML left join TPSCM on TPSCML.Document_No = TPSCM.No
+      where TPSCML.Line_Amount <> 0
+      group by TPSCML.Document_No, TPSCML.No, TPSCML.Description) as tp1 left join TPSCMS on tp1."Credit Memo Number" = TPSCMS.No

@@ -1,0 +1,79 @@
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018DynQ1
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018AprilDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018MayDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018JunDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018JulDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018AugDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018SepDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018OctDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018NovDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+
+Union all
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018DecDyn
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+
+Union all
+
+
+select "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center",sum("converted amount")
+from T2018NovDynRM
+group by "year", "quarter", "month", "Posting_Date","Partially Categorized Product", "Categorized Product","Product Line","License Type","Edition", "Major Language", "Category","Major Category","Cancelled","Bill_to_Country_Region_Code","Bill to Territory", "Operator Center"
+
+
+
+
+
+
+
+
+
+
+
